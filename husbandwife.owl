@@ -1,0 +1,22 @@
+@base   <http://www.cs.jyu.fi/ai/vagan/LifeInFinland.owl> .
+@prefix  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix  : <http://www.cs.jyu.fi/ai/vagan/LifeInFinland.owl#> .
+
+:Person		a		  rdfs:Class .
+:Woman		a		  rdfs:Class .
+:Man		a		  rdfs:Class .
+:Woman		rdfs:subClassOf	  :Person .
+:Man		rdfs:subClassOf	  :Person .
+:hasSpooth		a	           owl:ObjectProperty .
+:hasHusband	a	           owl:ObjectProperty .
+:hasHusband	rdfs:subPropertyOf         :hasSpooth .
+:hasSpooth                   rdfs:domain	  :Person .
+:hasSpooth		rdfs:range	  	  :Person .
+:hasHusband	rdfs:domain	  :Woman .
+:hasHusband	rdfs:range	                     :Man .
+:John		a		  :Man .
+:Mary		a		  :Woman .
+:Mary		:hasHusband	  :John .
+
