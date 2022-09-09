@@ -1,1448 +1,1171 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://d0034e.ddns.net/ontologies/Cars.owl#"
-     xml:base="http://d0034e.ddns.net/ontologies/Cars.owl"
-     xmlns:db="http://d004e.ddns.net/ontologies/Cars.owl#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:Cars="http://d0034e.ddns.net/Cars.owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:wiki="http://en.wikipedia.org/wiki/"
-     xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl">
-        <owl:imports rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl"/>
-        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasCityofBirth -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasCityofBirth">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isCityofBirthFor"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#City"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasDriver -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasDriver">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isDriverOf"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Driver"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasFather -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasFather">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isFatherOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasFriend -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasFriend">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isFriendOf"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasJobRecord -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasJobRecord">
-        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/Cars.owl#hasRecord"/>
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isJobRecordOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Employee"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasPart -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasPart">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isPartOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Engine"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasParticipant -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasParticipant">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isTakingPartIn"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#CarCompetition"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasPhoto -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasPhoto">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isPhotoOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Car"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#City"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Engine"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Person"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasPotentialFriend -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasPotentialFriend">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isPotentialFriendOf"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasRecord -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasRecord">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isRecordOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasReferenceToDuty -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasReferenceToDuty">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isDutyFrom"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasReferenceToEmployer -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasReferenceToEmployer">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isReferedAsEmployerIn"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Employer"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasReferenceToLearningOutcome -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasReferenceToLearningOutcome">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isLearningOutcomeFrom"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasReferenceToSchool -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasReferenceToSchool">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isReferedAsSchoolIn"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#School"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasStudyRecord -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasStudyRecord">
-        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/Cars.owl#hasRecord"/>
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isStudyRecordOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Scholar"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasValidityInterval -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasValidityInterval">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isValidityIntervalFor"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasWebPage -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasWebPage">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isWebPageOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#City"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Employer"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Person"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#School"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isCityofBirthFor -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isCityofBirthFor">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#City"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isDriverOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isDriverOf">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Driver"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isDutyFrom -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isDutyFrom">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isFatherOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isFatherOf">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isFriendOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isFriendOf">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isJobRecordOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isJobRecordOf">
-        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isRecordOf"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Employee"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isLearningOutcomeFrom -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isLearningOutcomeFrom">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isOwnerOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isOwnerOf">
-        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isPropertyOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isPartOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isPartOf">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Engine"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isPhotoOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isPhotoOf">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Car"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#City"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Engine"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Person"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isPotentialFriendOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isPotentialFriendOf">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isPropertyOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isPropertyOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isRecordOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isRecordOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isReferedAsEmployerIn -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isReferedAsEmployerIn">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Employer"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isReferedAsSchoolIn -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isReferedAsSchoolIn">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#School"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isStudyRecordOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isStudyRecordOf">
-        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/Cars.owl#isRecordOf"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Scholar"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isTakingPartIn -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isTakingPartIn">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#CarCompetition"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isValidityIntervalFor -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isValidityIntervalFor">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <rdfs:range rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#isWebPageOf -->
-
-    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/Cars.owl#isWebPageOf">
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#City"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Employer"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Person"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#School"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasColor -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasColor">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasDescription -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasDescription">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#CarCompetition"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Duty"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Employer"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Record"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#School"/>
-                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasFamilyName -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasFamilyName">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasFinishingTime -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasFinishingTime">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasFirstName -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasFirstName">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasStartingTime -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasStartingTime">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#hasURI -->
-
-    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/Cars.owl#hasURI">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Photo"/>
-                    <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Car -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Car">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#CarCompetition"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#City"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#CarCompetition -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#CarCompetition">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#City"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#City -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#City">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Driver -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Driver">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#isDriverOf"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Duty -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Duty">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Vehicle"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Employee -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Employee">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#hasJobRecord"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Employer -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Employer"/>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Engine -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Engine">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#FastVehicle -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#FastVehicle">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Vehicle"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Ferrari -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Ferrari">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#SportCar"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Formula-1 -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Formula-1">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#CarCompetition"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#HappyPerson -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#HappyPerson">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#isDriverOf"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#isFriendOf"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#isOwnerOf"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Infrastructure -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Infrastructure">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#JobRecord -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#JobRecord">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#LearningOutcome -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#LearningOutcome">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Vehicle"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Person -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Person">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Photo -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Photo">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Ralli -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Ralli">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#CarCompetition"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Record -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Record">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Vehicle"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Road -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Road">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Scholar -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Scholar">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#hasStudyRecord"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#School -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#School"/>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#SmartRoad -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#SmartRoad">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Road"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#SportCar -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#SportCar">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#FastVehicle"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://d0034e.ddns.net/Cars.owl#isTakingPartIn"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#StudyRecord -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#StudyRecord">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Record"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#TimeInterval -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#TimeInterval">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Vehicle"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Truck -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Truck">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Car"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Vehicle -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Vehicle"/>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#WebPage -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#WebPage">
-        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Wheel -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#WikipediaPage -->
-
-    <owl:Class rdf:about="http://d0034e.ddns.net/Cars.owl#WikipediaPage">
-        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/Cars.owl#WebPage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity -->
-
-    <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#CarOfMichael -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#CarOfMichael">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#SportCar"/>
-        <Cars:hasDriver rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
-        <Cars:hasPart rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine2"/>
-        <Cars:hasPhoto rdf:resource="http://www.zercustoms.com/news/images/Ferrari/Ferrari-458-Italia-1.jpg"/>
-        <Cars:isPropertyOf rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Denis -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Denis">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Employee"/>
-        <Cars:hasJobRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#JR1"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikitin</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sergiy</Cars:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Duc -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Duc">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Employee"/>
-        <Cars:hasJobRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#JR2"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duc</Cars:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Duty1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Duty1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-        <Cars:isDutyFrom rdf:resource="http://d0034e.ddns.net/Cars.owl#JR1"/>
-        <Cars:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Developer</Cars:hasDescription>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Duty2 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Duty2">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty"/>
-        <Cars:isDutyFrom rdf:resource="http://d0034e.ddns.net/Cars.owl#JR2"/>
-        <Cars:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">programming</Cars:hasDescription>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Engine1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Engine1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine"/>
-        <Cars:isPartOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Engine2 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Engine2">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine"/>
-        <Cars:hasPhoto rdf:resource="http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg"/>
-        <Cars:isPartOf rdf:resource="http://d0034e.ddns.net/Cars.owl#CarOfMichael"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Evgeny -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Evgeny">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <Cars:hasCityofBirth rdf:resource="http://dbpedia.org/page/Kharkiv"/>
-        <Cars:isFriendOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Ivan -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Ivan">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <Cars:isDriverOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-        <Cars:isFatherOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-        <Cars:isOwnerOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tsybulko</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivan</Cars:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#JR1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#JR1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-        <Cars:hasReferenceToDuty rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty1"/>
-        <Cars:hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Nokia"/>
-        <Cars:hasValidityInterval rdf:resource="http://d0034e.ddns.net/Cars.owl#TI1"/>
-        <Cars:isJobRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Denis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#JR2 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#JR2">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#JobRecord"/>
-        <Cars:hasReferenceToDuty rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty2"/>
-        <Cars:hasReferenceToEmployer rdf:resource="http://d0034e.ddns.net/Cars.owl#SixthGearStudio"/>
-        <Cars:hasValidityInterval rdf:resource="http://d0034e.ddns.net/Cars.owl#TI3"/>
-        <Cars:isJobRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Duc"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#LO1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#LO1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#LearningOutcome"/>
-        <Cars:isLearningOutcomeFrom rdf:resource="http://d0034e.ddns.net/Cars.owl#SR1"/>
-        <Cars:isLearningOutcomeFrom rdf:resource="http://d0034e.ddns.net/Cars.owl#SR2"/>
-        <Cars:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge Engineering</Cars:hasDescription>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Ozgur -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Ozgur">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Scholar"/>
-        <Cars:hasRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#SR2"/>
-        <Cars:hasStudyRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#SR2"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kurt</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ozgur</Cars:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#SR1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#SR1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-        <Cars:hasReferenceToLearningOutcome rdf:resource="http://d0034e.ddns.net/Cars.owl#LO1"/>
-        <Cars:hasReferenceToSchool rdf:resource="http://dbpedia.org/page/University_of_Jyvaskyla"/>
-        <Cars:hasValidityInterval rdf:resource="http://d0034e.ddns.net/Cars.owl#TI2"/>
-        <Cars:isRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#SR2 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#SR2">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#StudyRecord"/>
-        <Cars:hasReferenceToLearningOutcome rdf:resource="http://d0034e.ddns.net/Cars.owl#LO1"/>
-        <Cars:hasReferenceToSchool rdf:resource="http://dbpedia.org/page/University_of_Jyvaskyla"/>
-        <Cars:hasValidityInterval rdf:resource="http://d0034e.ddns.net/Cars.owl#TI3"/>
-        <Cars:isRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Ozgur"/>
-        <Cars:isStudyRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Ozgur"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#SixthGearStudio -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#SixthGearStudio">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Employer"/>
-        <Cars:isReferedAsEmployerIn rdf:resource="http://d0034e.ddns.net/Cars.owl#JR2"/>
-        <Cars:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">great employer, pays well</Cars:hasDescription>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#TI1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#TI1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <Cars:isValidityIntervalFor rdf:resource="http://d0034e.ddns.net/Cars.owl#JR1"/>
-        <Cars:hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-03</Cars:hasFinishingTime>
-        <Cars:hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-07</Cars:hasStartingTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#TI2 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#TI2">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <Cars:isValidityIntervalFor rdf:resource="http://d0034e.ddns.net/Cars.owl#SR1"/>
-        <Cars:hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-10</Cars:hasFinishingTime>
-        <Cars:hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-01</Cars:hasStartingTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#TI3 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#TI3">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#TimeInterval"/>
-        <Cars:isValidityIntervalFor rdf:resource="http://d0034e.ddns.net/Cars.owl#JR2"/>
-        <Cars:isValidityIntervalFor rdf:resource="http://d0034e.ddns.net/Cars.owl#SR2"/>
-        <Cars:hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-31</Cars:hasFinishingTime>
-        <Cars:hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-01</Cars:hasStartingTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Truck1 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Truck1">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck"/>
-        <Cars:hasDriver rdf:resource="http://d0034e.ddns.net/Cars.owl#Ivan"/>
-        <Cars:hasDriver rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-        <Cars:hasPart rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine1"/>
-        <Cars:hasPart rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel12345"/>
-        <Cars:hasPart rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel12346"/>
-        <Cars:hasPart rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel12347"/>
-        <Cars:hasPart rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel12348"/>
-        <Cars:isPropertyOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Ivan"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Vitalii -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Vitalii">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Driver"/>
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Scholar"/>
-        <Cars:hasCityofBirth rdf:resource="http://dbpedia.org/page/Kharkiv"/>
-        <Cars:hasFather rdf:resource="http://d0034e.ddns.net/Cars.owl#Ivan"/>
-        <Cars:hasFriend rdf:resource="http://d0034e.ddns.net/Cars.owl#Evgeny"/>
-        <Cars:hasRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#SR1"/>
-        <Cars:hasStudyRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#SR1"/>
-        <Cars:isDriverOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-        <Cars:isFriendOf rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tsybulko</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitalii</Cars:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Wheel12345 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel12345">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <Cars:isPartOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Wheel12346 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel12346">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <Cars:isPartOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Wheel12347 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel12347">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <Cars:isPartOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Wheel12348 -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Wheel12348">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Wheel"/>
-        <Cars:isPartOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Truck1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/page/Berlin -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Berlin">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#City"/>
-        <Cars:hasWebPage rdf:resource="http://en.wikipedia.org/wiki/Berlin"/>
-        <Cars:isCityofBirthFor rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
-        <Cars:isCityofBirthFor rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2016/SWRL_Example.owl#MichaelFaraday"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/page/Kharkiv -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Kharkiv">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#City"/>
-        <Cars:hasWebPage rdf:resource="http://en.wikipedia.org/wiki/Kharkiv"/>
-        <Cars:isCityofBirthFor rdf:resource="http://d0034e.ddns.net/Cars.owl#Evgeny"/>
-        <Cars:isCityofBirthFor rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/page/Michael_Schumacher -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Michael_Schumacher">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Driver"/>
-        <Cars:hasCityofBirth rdf:resource="http://dbpedia.org/page/Berlin"/>
-        <Cars:hasFriend rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-        <Cars:hasWebPage rdf:resource="http://en.wikipedia.org/wiki/Michael_Schumacher"/>
-        <Cars:isDriverOf rdf:resource="http://d0034e.ddns.net/Cars.owl#CarOfMichael"/>
-        <Cars:isFriendOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-        <Cars:isOwnerOf rdf:resource="http://d0034e.ddns.net/Cars.owl#CarOfMichael"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schumacher</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael</Cars:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/page/Nokia -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Nokia">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Employer"/>
-        <Cars:hasWebPage rdf:resource="http://en.wikipedia.org/wiki/Nokia"/>
-        <Cars:isReferedAsEmployerIn rdf:resource="http://d0034e.ddns.net/Cars.owl#JR1"/>
-        <Cars:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></Cars:hasDescription>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/page/University_of_Jyvaskyla -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/University_of_Jyvaskyla">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#School"/>
-        <Cars:hasWebPage rdf:resource="http://en.wikipedia.org/wiki/University_of_Jyvaskyla"/>
-        <Cars:isReferedAsSchoolIn rdf:resource="http://d0034e.ddns.net/Cars.owl#SR1"/>
-        <Cars:isReferedAsSchoolIn rdf:resource="http://d0034e.ddns.net/Cars.owl#SR2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://en.nuph.edu.ua/wp-content/flagallery/kharkiv_today/kharkiv-railway-station.jpg -->
-
-    <owl:NamedIndividual rdf:about="http://en.nuph.edu.ua/wp-content/flagallery/kharkiv_today/kharkiv-railway-station.jpg">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.nuph.edu.ua/wp-content/flagallery/kharkiv_today/kharkiv-railway-station.jpg</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://en.wikipedia.org/wiki/Berlin -->
-
-    <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/Berlin">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#WikipediaPage"/>
-        <Cars:isWebPageOf rdf:resource="http://dbpedia.org/page/Berlin"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Berlin</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://en.wikipedia.org/wiki/Kharkiv -->
-
-    <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/Kharkiv">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#WikipediaPage"/>
-        <Cars:isWebPageOf rdf:resource="http://dbpedia.org/page/Kharkiv"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Kharkiv</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://en.wikipedia.org/wiki/Michael_Schumacher -->
-
-    <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/Michael_Schumacher">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#WikipediaPage"/>
-        <Cars:isWebPageOf rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Michael_Schumacher</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://en.wikipedia.org/wiki/Nokia -->
-
-    <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/Nokia">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#WikipediaPage"/>
-        <Cars:isWebPageOf rdf:resource="http://dbpedia.org/page/Nokia"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Nokia</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://en.wikipedia.org/wiki/University_of_Jyvaskyla -->
-
-    <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/University_of_Jyvaskyla">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#WikipediaPage"/>
-        <Cars:isWebPageOf rdf:resource="http://dbpedia.org/page/University_of_Jyvaskyla"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/University_of_Jyvaskyla</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg -->
-
-    <owl:NamedIndividual rdf:about="http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <Cars:isPhotoOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Engine2"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2016/SWRL_Example.owl#MichaelFaraday -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2016/SWRL_Example.owl#MichaelFaraday">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Person"/>
-        <Cars:hasCityofBirth rdf:resource="http://dbpedia.org/page/Berlin"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faraday</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael</Cars:hasFirstName>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:seeAlso>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.zercustoms.com/news/images/Ferrari/Ferrari-458-Italia-1.jpg -->
-
-    <owl:NamedIndividual rdf:about="http://www.zercustoms.com/news/images/Ferrari/Ferrari-458-Italia-1.jpg">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Photo"/>
-        <Cars:isPhotoOf rdf:resource="http://d0034e.ddns.net/Cars.owl#CarOfMichael"/>
-        <Cars:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.zercustoms.com/news/images/Ferrari/Ferrari-458-Italia-1.jpg</Cars:hasURI>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Evgeny"/>
-            <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Evgeny"/>
-            <rdf:Description rdf:about="http://dbpedia.org/page/Michael_Schumacher"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://d0034e.ddns.net/Cars.owl#Vitalii"/>
-            <rdf:Description rdf:about="http://dbpedia.org/page/Michael_Schumacher"/>
-        </owl:distinctMembers>
-    </rdf:Description>
+<rdf:RDF
+    xmlns:wiki="http://en.wikipedia.org/wiki/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+    xmlns="http://d0034e.ddnsnet/ontologies/Cars.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+    xmlns:db="http://dbpedia.org/page/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://d0034e.ddnsnet/ontologies/Cars.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
+    <owl:imports rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="HappyPerson">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Person"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:InverseFunctionalProperty rdf:ID="isOwnerOf"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >5</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isDriverOf"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >100</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isFriendOf"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LearningOutcome">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Photo"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Vehicle"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="City"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="TimeInterval"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Car"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity">
+        <owl:disjointWith>
+          <owl:Class rdf:about="#Record"/>
+        </owl:disjointWith>
+        <owl:disjointWith>
+          <owl:Class rdf:about="#TimeInterval"/>
+        </owl:disjointWith>
+        <owl:disjointWith rdf:resource="#LearningOutcome"/>
+        <owl:disjointWith>
+          <owl:Class rdf:about="#Duty"/>
+        </owl:disjointWith>
+      </rdf:Description>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="CarCompetition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Engine"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Vehicle">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#TimeInterval"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#TimeInterval">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#CarCompetition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Engine"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Car"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#City"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Vehicle"/>
+    <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Photo"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Engine">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#City"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#CarCompetition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Car"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Photo"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="Road">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Car">
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#City"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#CarCompetition"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Photo"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#City">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Photo"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#CarCompetition"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Car"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StudyRecord">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Record"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="JobRecord"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="Driver">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#isDriverOf"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Person"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#JobRecord">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Record"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#StudyRecord"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FastVehicle">
+    <rdfs:subClassOf rdf:resource="#Vehicle"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Scholar">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasStudyRecord"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Person"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="WikipediaPage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#WebPage"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#CarCompetition">
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Photo"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Person">
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Photo"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Photo">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Record"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Record">
+    <owl:disjointWith rdf:resource="#Photo"/>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+    <owl:disjointWith rdf:resource="#Vehicle"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Infrastructure"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
+    <owl:disjointWith rdf:resource="#Car"/>
+  </owl:Class>
+  <owl:Class rdf:ID="School"/>
+  <owl:Class rdf:ID="Ralli">
+    <rdfs:subClassOf rdf:resource="#CarCompetition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Employee">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasJobRecord"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ferrari">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SportCar"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Infrastructure">
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith rdf:resource="#Photo"/>
+    <owl:disjointWith rdf:resource="#Record"/>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#WebPage"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="Truck">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#SportCar"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#Car"/>
+  </owl:Class>
+  <owl:Class rdf:about="#SportCar">
+    <rdfs:subClassOf rdf:resource="#Car"/>
+    <rdfs:subClassOf rdf:resource="#FastVehicle"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isTakingPartIn"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Truck"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Employer"/>
+  <owl:Class rdf:about="#WebPage">
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Duty"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Infrastructure"/>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith rdf:resource="#Photo"/>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith rdf:resource="#Record"/>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Formula-1">
+    <rdfs:subClassOf rdf:resource="#CarCompetition"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Duty">
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith rdf:resource="#Record"/>
+    <owl:disjointWith rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity"/>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wheel"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Photo"/>
+    <owl:disjointWith rdf:resource="#Infrastructure"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+    <owl:disjointWith rdf:resource="#Vehicle"/>
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith rdf:resource="#WebPage"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SmartRoad">
+    <rdfs:subClassOf rdf:resource="#Road"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Wheel">
+    <owl:disjointWith rdf:resource="#Car"/>
+    <owl:disjointWith rdf:resource="#Record"/>
+    <owl:disjointWith rdf:resource="#City"/>
+    <owl:disjointWith rdf:resource="#Infrastructure"/>
+    <owl:disjointWith rdf:resource="#CarCompetition"/>
+    <owl:disjointWith rdf:resource="#Engine"/>
+    <owl:disjointWith rdf:resource="#WebPage"/>
+    <owl:disjointWith rdf:resource="#Photo"/>
+    <owl:disjointWith rdf:resource="#LearningOutcome"/>
+    <owl:disjointWith rdf:resource="#TimeInterval"/>
+    <owl:disjointWith rdf:resource="#Duty"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasReferenceToLearningOutcome">
+    <rdfs:range rdf:resource="#LearningOutcome"/>
+    <rdfs:domain rdf:resource="#StudyRecord"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isLearningOutcomeFrom"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isReferedAsSchoolIn">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasReferenceToSchool"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#School"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:range rdf:resource="#StudyRecord"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isWebPageOf">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasWebPage"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#WebPage"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Person"/>
+          <owl:Class rdf:about="#City"/>
+          <owl:Class rdf:about="#School"/>
+          <owl:Class rdf:about="#Employer"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isValidityIntervalFor">
+    <rdfs:domain rdf:resource="#TimeInterval"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasValidityInterval"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Record"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasDriver">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#isDriverOf"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Driver"/>
+    <rdfs:domain rdf:resource="#Car"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isDutyFrom">
+    <rdfs:domain rdf:resource="#Duty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasReferenceToDuty"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#JobRecord"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isFriendOf">
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasFriend"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isLearningOutcomeFrom">
+    <rdfs:range rdf:resource="#StudyRecord"/>
+    <owl:inverseOf rdf:resource="#hasReferenceToLearningOutcome"/>
+    <rdfs:domain rdf:resource="#LearningOutcome"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasReferenceToEmployer">
+    <rdfs:range rdf:resource="#Employer"/>
+    <rdfs:domain rdf:resource="#JobRecord"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isReferedAsEmployerIn"/>
+    </owl:inverseOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasParticipant">
+    <rdfs:range rdf:resource="#Car"/>
+    <rdfs:domain rdf:resource="#CarCompetition"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#isTakingPartIn"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasWebPage">
+    <rdfs:range rdf:resource="#WebPage"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#City"/>
+          <owl:Class rdf:about="#Person"/>
+          <owl:Class rdf:about="#Employer"/>
+          <owl:Class rdf:about="#School"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#isWebPageOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasValidityInterval">
+    <rdfs:domain rdf:resource="#Record"/>
+    <owl:inverseOf rdf:resource="#isValidityIntervalFor"/>
+    <rdfs:range rdf:resource="#TimeInterval"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isPartOf">
+    <rdfs:range rdf:resource="#Car"/>
+    <owl:inverseOf>
+      <owl:TransitiveProperty rdf:ID="hasPart"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Wheel"/>
+          <owl:Class rdf:about="#Engine"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasFriend">
+    <rdfs:range rdf:resource="#Person"/>
+    <owl:inverseOf rdf:resource="#isFriendOf"/>
+    <rdfs:domain rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasRecord">
+    <rdfs:range rdf:resource="#Record"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isRecordOf"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isDriverOf">
+    <rdfs:range rdf:resource="#Car"/>
+    <rdfs:domain rdf:resource="#Driver"/>
+    <owl:inverseOf rdf:resource="#hasDriver"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isPhotoOf">
+    <rdfs:domain rdf:resource="#Photo"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Car"/>
+          <owl:Class rdf:about="#Person"/>
+          <owl:Class rdf:about="#Infrastructure"/>
+          <owl:Class rdf:about="#City"/>
+          <owl:Class rdf:about="#Engine"/>
+          <owl:Class rdf:about="#Wheel"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasPhoto"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isJobRecordOf">
+    <rdfs:range rdf:resource="#Employee"/>
+    <rdfs:domain rdf:resource="#JobRecord"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasJobRecord"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#isRecordOf"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasReferenceToSchool">
+    <rdfs:range rdf:resource="#School"/>
+    <rdfs:domain rdf:resource="#StudyRecord"/>
+    <owl:inverseOf rdf:resource="#isReferedAsSchoolIn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasStudyRecord">
+    <rdfs:range rdf:resource="#StudyRecord"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isStudyRecordOf"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="#hasRecord"/>
+    <rdfs:domain rdf:resource="#Scholar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasReferenceToDuty">
+    <owl:inverseOf rdf:resource="#isDutyFrom"/>
+    <rdfs:range rdf:resource="#Duty"/>
+    <rdfs:domain rdf:resource="#JobRecord"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPhoto">
+    <rdfs:range rdf:resource="#Photo"/>
+    <owl:inverseOf rdf:resource="#isPhotoOf"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Car"/>
+          <owl:Class rdf:about="#Person"/>
+          <owl:Class rdf:about="#Infrastructure"/>
+          <owl:Class rdf:about="#City"/>
+          <owl:Class rdf:about="#Engine"/>
+          <owl:Class rdf:about="#Wheel"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isStudyRecordOf">
+    <owl:inverseOf rdf:resource="#hasStudyRecord"/>
+    <rdfs:domain rdf:resource="#StudyRecord"/>
+    <rdfs:range rdf:resource="#Scholar"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#isRecordOf"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isPotentialFriendOf">
+    <rdfs:domain rdf:resource="#Person"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasPotentialFriend"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasJobRecord">
+    <rdfs:domain rdf:resource="#Employee"/>
+    <owl:inverseOf rdf:resource="#isJobRecordOf"/>
+    <rdfs:range rdf:resource="#JobRecord"/>
+    <rdfs:subPropertyOf rdf:resource="#hasRecord"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isTakingPartIn">
+    <rdfs:domain rdf:resource="#Car"/>
+    <owl:inverseOf rdf:resource="#hasParticipant"/>
+    <rdfs:range rdf:resource="#CarCompetition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isReferedAsEmployerIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:range rdf:resource="#JobRecord"/>
+    <owl:inverseOf rdf:resource="#hasReferenceToEmployer"/>
+    <rdfs:domain rdf:resource="#Employer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPotentialFriend">
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <owl:inverseOf rdf:resource="#isPotentialFriendOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isFatherOf">
+    <rdfs:range rdf:resource="#Person"/>
+    <owl:inverseOf>
+      <owl:FunctionalProperty rdf:ID="hasFather"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isRecordOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:inverseOf rdf:resource="#hasRecord"/>
+    <rdfs:domain rdf:resource="#Record"/>
+    <rdfs:range rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasColor">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >White</rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:rest>
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >Black</rdf:first>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Yellow</rdf:first>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >Red</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="#Car"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasDescription">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Record"/>
+          <owl:Class rdf:about="#LearningOutcome"/>
+          <owl:Class rdf:about="#Duty"/>
+          <owl:Class rdf:about="#CarCompetition"/>
+          <owl:Class rdf:about="#Employer"/>
+          <owl:Class rdf:about="#School"/>
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:TransitiveProperty rdf:about="#hasPart">
+    <rdfs:domain rdf:resource="#Car"/>
+    <owl:inverseOf rdf:resource="#isPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Engine"/>
+          <owl:Class rdf:about="#Wheel"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:TransitiveProperty>
+  <owl:FunctionalProperty rdf:ID="hasFinishingTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="#TimeInterval"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasFirstName">
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="isPropertyOf">
+    <rdfs:domain rdf:resource="#Car"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <owl:inverseOf>
+      <owl:InverseFunctionalProperty rdf:about="#isOwnerOf"/>
+    </owl:inverseOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasFamilyName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasURI">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#WebPage"/>
+          <owl:Class rdf:about="#Photo"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasCityofBirth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#City"/>
+    <owl:inverseOf>
+      <owl:InverseFunctionalProperty rdf:ID="isCityofBirthFor"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#Person"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasStartingTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="#TimeInterval"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#hasFather">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <owl:inverseOf rdf:resource="#isFatherOf"/>
+    <rdfs:range rdf:resource="#Person"/>
+  </owl:FunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:about="#isCityofBirthFor">
+    <rdfs:domain rdf:resource="#City"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#hasCityofBirth"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:about="#isOwnerOf">
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:range rdf:resource="#Car"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#isPropertyOf"/>
+  </owl:InverseFunctionalProperty>
+  <Photo rdf:about="http://en.nuph.edu.ua/wp-content/flagallery/kharkiv_today/kharkiv-railway-station.jpg">
+    <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.nuph.edu.ua/wp-content/flagallery/kharkiv_today/kharkiv-railway-station.jpg</hasURI>
+  </Photo>
+  <School rdf:about="http://dbpedia.org/page/University_of_Jyvaskyla">
+    <hasWebPage>
+      <WikipediaPage rdf:about="http://en.wikipedia.org/wiki/University_of_Jyvaskyla">
+        <isWebPageOf rdf:resource="http://dbpedia.org/page/University_of_Jyvaskyla"/>
+        <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://en.wikipedia.org/wiki/University_of_Jyvaskyla</hasURI>
+      </WikipediaPage>
+    </hasWebPage>
+    <isReferedAsSchoolIn>
+      <StudyRecord rdf:ID="SR1">
+        <hasReferenceToLearningOutcome>
+          <LearningOutcome rdf:ID="LO1">
+            <isLearningOutcomeFrom rdf:resource="#SR1"/>
+            <isLearningOutcomeFrom>
+              <StudyRecord rdf:ID="SR2">
+                <isRecordOf>
+                  <Scholar rdf:ID="Ozgur">
+                    <hasRecord rdf:resource="#SR2"/>
+                    <hasStudyRecord rdf:resource="#SR2"/>
+                    <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Ozgur</hasFirstName>
+                    <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Kurt</hasFamilyName>
+                  </Scholar>
+                </isRecordOf>
+                <hasValidityInterval>
+                  <TimeInterval rdf:ID="TI3">
+                    <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                    >2016-08-31</hasFinishingTime>
+                    <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                    >2015-06-01</hasStartingTime>
+                    <isValidityIntervalFor>
+                      <JobRecord rdf:ID="JR2">
+                        <hasReferenceToEmployer>
+                          <Employer rdf:ID="SixthGearStudio">
+                            <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >great employer, pays well</hasDescription>
+                            <isReferedAsEmployerIn rdf:resource="#JR2"/>
+                          </Employer>
+                        </hasReferenceToEmployer>
+                        <isJobRecordOf>
+                          <Employee rdf:ID="Duc">
+                            <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >Duc</hasFirstName>
+                            <hasJobRecord rdf:resource="#JR2"/>
+                            <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >Le</hasFamilyName>
+                          </Employee>
+                        </isJobRecordOf>
+                        <hasReferenceToDuty>
+                          <Duty rdf:ID="Duty2">
+                            <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >programming</hasDescription>
+                            <isDutyFrom rdf:resource="#JR2"/>
+                          </Duty>
+                        </hasReferenceToDuty>
+                        <hasValidityInterval rdf:resource="#TI3"/>
+                      </JobRecord>
+                    </isValidityIntervalFor>
+                    <isValidityIntervalFor rdf:resource="#SR2"/>
+                  </TimeInterval>
+                </hasValidityInterval>
+                <hasReferenceToLearningOutcome rdf:resource="#LO1"/>
+                <hasReferenceToSchool rdf:resource="http://dbpedia.org/page/University_of_Jyvaskyla"/>
+                <isStudyRecordOf rdf:resource="#Ozgur"/>
+              </StudyRecord>
+            </isLearningOutcomeFrom>
+            <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Knowledge Engineering</hasDescription>
+          </LearningOutcome>
+        </hasReferenceToLearningOutcome>
+        <hasReferenceToSchool rdf:resource="http://dbpedia.org/page/University_of_Jyvaskyla"/>
+        <isRecordOf>
+          <Driver rdf:ID="Vitalii">
+            <hasCityofBirth>
+              <City rdf:about="http://dbpedia.org/page/Kharkiv">
+                <isCityofBirthFor rdf:resource="#Vitalii"/>
+                <isCityofBirthFor>
+                  <Person rdf:ID="Vagan">
+                    <hasCityofBirth rdf:resource="http://dbpedia.org/page/Kharkiv"/>
+                    <isFriendOf rdf:resource="#Vitalii"/>
+                    <owl:differentFrom rdf:resource="#Vitalii"/>
+                    <owl:differentFrom>
+                      <Driver rdf:about="http://dbpedia.org/page/Michael_Schumacher">
+                        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Michael</hasFirstName>
+                        <isOwnerOf>
+                          <SportCar rdf:ID="CarOfMichael">
+                            <isPropertyOf rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
+                            <hasPhoto>
+                              <Photo rdf:about="http://www.zercustoms.com/news/images/Ferrari/Ferrari-458-Italia-1.jpg">
+                                <isPhotoOf rdf:resource="#CarOfMichael"/>
+                                <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >http://www.zercustoms.com/news/images/Ferrari/Ferrari-458-Italia-1.jpg</hasURI>
+                              </Photo>
+                            </hasPhoto>
+                            <hasPart>
+                              <Engine rdf:ID="Engine2">
+                                <isPartOf rdf:resource="#CarOfMichael"/>
+                                <hasPhoto>
+                                  <Photo rdf:about="http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg">
+                                    <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                    >http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg</hasURI>
+                                    <isPhotoOf rdf:resource="#Engine2"/>
+                                  </Photo>
+                                </hasPhoto>
+                              </Engine>
+                            </hasPart>
+                            <hasDriver rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
+                          </SportCar>
+                        </isOwnerOf>
+                        <owl:differentFrom rdf:resource="#Vagan"/>
+                        <hasCityofBirth>
+                          <City rdf:about="http://dbpedia.org/page/Berlin">
+                            <isCityofBirthFor>
+                              <Person rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2016/SWRL_Example.owl#MichaelFaraday">
+                                <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >Michael</hasFirstName>
+                                <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                ></rdfs:seeAlso>
+                                <hasCityofBirth rdf:resource="http://dbpedia.org/page/Berlin"/>
+                                <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >Faraday</hasFamilyName>
+                              </Person>
+                            </isCityofBirthFor>
+                            <isCityofBirthFor rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
+                            <hasWebPage>
+                              <WikipediaPage rdf:about="http://en.wikipedia.org/wiki/Berlin">
+                                <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >http://en.wikipedia.org/wiki/Berlin</hasURI>
+                                <isWebPageOf rdf:resource="http://dbpedia.org/page/Berlin"/>
+                              </WikipediaPage>
+                            </hasWebPage>
+                          </City>
+                        </hasCityofBirth>
+                        <hasFriend rdf:resource="#Vitalii"/>
+                        <owl:differentFrom rdf:resource="#Vitalii"/>
+                        <isFriendOf rdf:resource="#Vitalii"/>
+                        <hasWebPage>
+                          <WikipediaPage rdf:about="http://en.wikipedia.org/wiki/Michael_Schumacher">
+                            <isWebPageOf rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
+                            <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >http://en.wikipedia.org/wiki/Michael_Schumacher</hasURI>
+                          </WikipediaPage>
+                        </hasWebPage>
+                        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Schumacher</hasFamilyName>
+                        <isDriverOf rdf:resource="#CarOfMichael"/>
+                      </Driver>
+                    </owl:differentFrom>
+                  </Person>
+                </isCityofBirthFor>
+                <hasWebPage>
+                  <WikipediaPage rdf:about="http://en.wikipedia.org/wiki/Kharkiv">
+                    <isWebPageOf rdf:resource="http://dbpedia.org/page/Kharkiv"/>
+                    <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >http://en.wikipedia.org/wiki/Kharkiv</hasURI>
+                  </WikipediaPage>
+                </hasWebPage>
+              </City>
+            </hasCityofBirth>
+            <isDriverOf>
+              <Truck rdf:ID="Truck1">
+                <hasPart>
+                  <Engine rdf:ID="Engine1">
+                    <isPartOf rdf:resource="#Truck1"/>
+                  </Engine>
+                </hasPart>
+                <hasPart>
+                  <Wheel rdf:ID="Wheel12346">
+                    <isPartOf rdf:resource="#Truck1"/>
+                  </Wheel>
+                </hasPart>
+                <hasPart>
+                  <Wheel rdf:ID="Wheel12345">
+                    <isPartOf rdf:resource="#Truck1"/>
+                  </Wheel>
+                </hasPart>
+                <hasPart>
+                  <Wheel rdf:ID="Wheel12347">
+                    <isPartOf rdf:resource="#Truck1"/>
+                  </Wheel>
+                </hasPart>
+                <hasPart>
+                  <Wheel rdf:ID="Wheel12348">
+                    <isPartOf rdf:resource="#Truck1"/>
+                  </Wheel>
+                </hasPart>
+                <hasDriver rdf:resource="#Vitalii"/>
+                <hasDriver>
+                  <Person rdf:ID="Ivan">
+                    <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Tsybulko</hasFamilyName>
+                    <isOwnerOf rdf:resource="#Truck1"/>
+                    <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Ivan</hasFirstName>
+                    <isFatherOf rdf:resource="#Vitalii"/>
+                    <isDriverOf rdf:resource="#Truck1"/>
+                  </Person>
+                </hasDriver>
+                <isPropertyOf rdf:resource="#Ivan"/>
+              </Truck>
+            </isDriverOf>
+            <hasFriend rdf:resource="#Vagan"/>
+            <owl:differentFrom rdf:resource="#Vagan"/>
+            <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Tsybulko</hasFamilyName>
+            <owl:differentFrom rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
+            <hasStudyRecord rdf:resource="#SR1"/>
+            <hasFather rdf:resource="#Ivan"/>
+            <hasRecord rdf:resource="#SR1"/>
+            <isFriendOf rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
+            <rdf:type rdf:resource="#Scholar"/>
+            <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Vitalii</hasFirstName>
+          </Driver>
+        </isRecordOf>
+        <hasValidityInterval>
+          <TimeInterval rdf:ID="TI2">
+            <isValidityIntervalFor rdf:resource="#SR1"/>
+            <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2016-09-01</hasStartingTime>
+            <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2016-10-10</hasFinishingTime>
+          </TimeInterval>
+        </hasValidityInterval>
+      </StudyRecord>
+    </isReferedAsSchoolIn>
+    <isReferedAsSchoolIn rdf:resource="#SR2"/>
+  </School>
+  <JobRecord rdf:ID="JR1">
+    <hasValidityInterval>
+      <TimeInterval rdf:ID="TI1">
+        <isValidityIntervalFor rdf:resource="#JR1"/>
+        <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2014-10-07</hasStartingTime>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2015-12-03</hasFinishingTime>
+      </TimeInterval>
+    </hasValidityInterval>
+    <hasReferenceToDuty>
+      <Duty rdf:ID="Duty1">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Software Developer</hasDescription>
+        <isDutyFrom rdf:resource="#JR1"/>
+      </Duty>
+    </hasReferenceToDuty>
+    <isJobRecordOf>
+      <Employee rdf:ID="Sergiy">
+        <hasJobRecord rdf:resource="#JR1"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Sergiy</hasFirstName>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Nikitin</hasFamilyName>
+      </Employee>
+    </isJobRecordOf>
+    <hasReferenceToEmployer>
+      <Employer rdf:about="http://dbpedia.org/page/Nokia">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></hasDescription>
+        <hasWebPage>
+          <WikipediaPage rdf:about="http://en.wikipedia.org/wiki/Nokia">
+            <isWebPageOf rdf:resource="http://dbpedia.org/page/Nokia"/>
+            <hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://en.wikipedia.org/wiki/Nokia</hasURI>
+          </WikipediaPage>
+        </hasWebPage>
+        <isReferedAsEmployerIn rdf:resource="#JR1"/>
+      </Employer>
+    </hasReferenceToEmployer>
+  </JobRecord>
 </rdf:RDF>
 
-
-
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
+<!-- Created with Protege (with OWL Plugin 3.5, Build 660)  http://protege.stanford.edu -->
