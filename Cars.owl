@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://d004e.ddns.net/ontologies/Cars.owl#"
-     xml:base="http://d004e.ddns.net/ontologies/Cars.owl"
-     xmlns:db="http://dbpedia.org/page/"
+<rdf:RDF xmlns="http://d0034e.ddns.net/ontologies/Cars.owl#"
+     xml:base="http://d0034e.ddns.net/ontologies/Cars.owl"
+     xmlns:db="http://d004e.ddns.net/ontologies/Cars.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
