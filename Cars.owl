@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://d0034e.ddns.net/ontologies/Cars.owl#"
      xml:base="http://d0034e.ddns.net/ontologies/Cars.owl"
-     xmlns:db="http://d004e.ddns.net/ontologies/Cars.owl#"
+     xmlns:db="http://dbpedia.org/page/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -989,17 +989,6 @@
     
 
 
-    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Denis -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Denis">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Employee"/>
-        <hasJobRecord rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JR1"/>
-        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikitin</hasFamilyName>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sergiy</hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Duc -->
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Duc">
@@ -1070,7 +1059,7 @@
         <hasReferenceToDuty rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Duty1"/>
         <hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Nokia"/>
         <hasValidityInterval rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#TI1"/>
-        <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Denis"/>
+        <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Sergiy"/>
     </owl:NamedIndividual>
     
 
@@ -1131,6 +1120,17 @@
         <hasValidityInterval rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#TI3"/>
         <isRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Ozgur"/>
         <isStudyRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Ozgur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Sergiy -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Sergiy">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Employee"/>
+        <hasJobRecord rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JR1"/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikitin</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sergiy</hasFirstName>
     </owl:NamedIndividual>
     
 
