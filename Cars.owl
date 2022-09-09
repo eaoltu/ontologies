@@ -990,6 +990,17 @@
     
 
 
+    <!-- http://d0034e.ddns.net/Cars.owl#Denis -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Denis">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Employee"/>
+        <Cars:hasJobRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#JR1"/>
+        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikitin</Cars:hasFamilyName>
+        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sergiy</Cars:hasFirstName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://d0034e.ddns.net/Cars.owl#Duc -->
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Duc">
@@ -1070,7 +1081,7 @@
         <Cars:hasReferenceToDuty rdf:resource="http://d0034e.ddns.net/Cars.owl#Duty1"/>
         <Cars:hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Nokia"/>
         <Cars:hasValidityInterval rdf:resource="http://d0034e.ddns.net/Cars.owl#TI1"/>
-        <Cars:isJobRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Sergiy"/>
+        <Cars:isJobRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Denis"/>
     </owl:NamedIndividual>
     
 
@@ -1131,17 +1142,6 @@
         <Cars:hasValidityInterval rdf:resource="http://d0034e.ddns.net/Cars.owl#TI3"/>
         <Cars:isRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Ozgur"/>
         <Cars:isStudyRecordOf rdf:resource="http://d0034e.ddns.net/Cars.owl#Ozgur"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://d0034e.ddns.net/Cars.owl#Sergiy -->
-
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/Cars.owl#Sergiy">
-        <rdf:type rdf:resource="http://d0034e.ddns.net/Cars.owl#Employee"/>
-        <Cars:hasJobRecord rdf:resource="http://d0034e.ddns.net/Cars.owl#JR1"/>
-        <Cars:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikitin</Cars:hasFamilyName>
-        <Cars:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sergiy</Cars:hasFirstName>
     </owl:NamedIndividual>
     
 
