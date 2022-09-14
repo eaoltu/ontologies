@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://d0034e.ddns.net/ontologies/dissertation.owl#"
+     xml:base="http://d0034e.ddns.net/ontologies/dissertation.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dissertation="http://d0034e.ddns.net/ontologies/dissertation.owl#">
+    <owl:Ontology rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#hasAuthor">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#isAuthorOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#hasSupervisor -->
+
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#hasSupervisor">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#isSupervisorOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#isAuthorOf">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#isHostFor -->
+
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#isHostFor">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#isWrittenIn"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#University"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#isSupervisorOf -->
+
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#isSupervisorOf">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#isWrittenIn -->
+
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#isWrittenIn">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#hasTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation -->
+
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#Person -->
+
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#University -->
+
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#DenisKleyko -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#DenisKleyko">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#EvgenyOsipov -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#EvgenyOsipov">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#LuleaUniversityOfTechnology -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#LuleaUniversityOfTechnology">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#WolfgangBirk -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#WolfgangBirk">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://urn.fi/urn:nbn:se:ltu:diva-68338 -->
+
+    <owl:NamedIndividual rdf:about="http://urn.fi/urn:nbn:se:ltu:diva-68338">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#Dissertation"/>
+        <hasAuthor rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#DenisKleyko"/>
+        <hasSupervisor rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#EvgenyOsipov"/>
+        <hasSupervisor rdf:resource="http://d0034e.ddns.net/ontologies/dissertation.owl#WolfgangBirk"/>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector Symbolic Architectures and their applications: Computing with random vectors in a hyperdimensional space</hasTitle>
+        <rdfs:label>DenisKleykoPhD</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
