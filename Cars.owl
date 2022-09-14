@@ -1124,6 +1124,8 @@
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JobRecord"/>
         <hasReferenceToDuty rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Duty3"/>
         <hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Ericsson"/>
+        <hasValidityInterval rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#TI4"/>
+        <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Alex"/>
     </owl:NamedIndividual>
     
 
@@ -1216,6 +1218,17 @@
         <isValidityIntervalFor rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#SR2"/>
         <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-31</hasFinishingTime>
         <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-01</hasStartingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#TI4 -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#TI4">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#TimeInterval"/>
+        <isValidityIntervalFor rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JR3"/>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></hasFinishingTime>
+        <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</hasStartingTime>
     </owl:NamedIndividual>
     
 
@@ -1316,6 +1329,7 @@
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Ericsson">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Employer"/>
         <hasWebPage rdf:resource="http://dbpedia.org/page/Ericsson"/>
+        <isReferedAsEmployerIn rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JR3"/>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></hasDescription>
     </owl:NamedIndividual>
     
