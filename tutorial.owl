@@ -934,6 +934,22 @@
     
 
 
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#EvgenyOsipov -->
+
+    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#EvgenyOsipov">
+        <owl:sameAs rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Evgeny_Osipov"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/dissertation.owl#LuleaUniversityOfTechnology -->
+
+    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/dissertation.owl#LuleaUniversityOfTechnology">
+        <owl:sameAs rdf:resource="https://dbpedia.org/page/Lule%C3%A5_University_of_Technology#Luleå_University_of_Technology"/>
+    </rdf:Description>
+    
+
+
     <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Bachelor -->
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Bachelor">
@@ -946,6 +962,21 @@
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Confidence">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Evgeny_Osipov -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Evgeny_Osipov">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher"/>
+        <hasCityOfResidence rdf:resource="https://dbpedia.org/page/Luleå#Luleå"/>
+        <hasGoogleScholarAccount rdf:resource="https://scholar.google.se/citations?user=wba4WxIAAAAJ&amp;hl=en#EvgenyOsipovInGoogleScholar"/>
+        <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Tom"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-06-10T00:00:00</hasBirthday>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osipov</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evgeny</hasFirstName>
     </owl:NamedIndividual>
     
 
@@ -971,14 +1002,14 @@
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Pekka_Neittaanmaki">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher"/>
-        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1951-04-14T12:00:00</hasBirthday>
         <hasCityOfResidence rdf:resource="http://dbpedia.org/page/Jyväskylä"/>
-        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neittaanmaki</hasFamilyName>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pekka</hasFirstName>
         <hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=BShrE6oAAAAJ&amp;hl=en&amp;oi=sra"/>
         <hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=58777"/>
         <hasORCIDAccount rdf:resource="https://orcid.org/0000-0003-4737-7094"/>
         <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Jerry"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1951-04-14T12:00:00</hasBirthday>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neittaanmaki</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pekka</hasFirstName>
     </owl:NamedIndividual>
     
 
@@ -1011,11 +1042,11 @@
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#VaganMaster">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
-        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1981-07-01T12:00:00</hasFinishingTime>
         <hasIntededDegree rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Master"/>
         <hasSchool rdf:resource="http://dbpedia.org/page/Kharkiv_National_University_of_Radioelectronics"/>
-        <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-09-01T09:00:00</hasStartTime>
         <isStudyRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan"/>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1981-07-01T12:00:00</hasFinishingTime>
+        <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-09-01T09:00:00</hasStartTime>
     </owl:NamedIndividual>
     
 
@@ -1025,9 +1056,9 @@
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#VaganNokia">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord"/>
         <hasCompany rdf:resource="http://dbpedia.org/page/Nokia"/>
+        <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan"/>
         <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-06-09T12:00:00</hasFinishingTime>
         <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-07-01T12:00:00</hasStartTime>
-        <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan"/>
     </owl:NamedIndividual>
     
 
@@ -1038,15 +1069,15 @@
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher"/>
         <owl:sameAs rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#VaganTerziyan"/>
-        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-12-27T00:00:00</hasBirthday>
         <hasCityOfResidence rdf:resource="http://dbpedia.org/page/Jyväskylä"/>
-        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terziyan</hasFamilyName>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vagan</hasFirstName>
         <hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=4U8ydfgAAAAJ"/>
         <hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=159805"/>
         <hasORCIDAccount rdf:resource="https://orcid.org/0000-0001-7732-2962"/>
         <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Tom"/>
         <hasPhoto rdf:resource="http://www.cs.jyu.fi/ai/Vagan_Terziyan.JPG"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-12-27T00:00:00</hasBirthday>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terziyan</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vagan</hasFirstName>
     </owl:NamedIndividual>
     
 
@@ -1056,14 +1087,14 @@
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Donald_Trump">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Politician"/>
-        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1946-06-14T12:00:00</hasBirthday>
         <hasCityOfResidence rdf:resource="http://dbpedia.org/page/Washington,_D.C."/>
-        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trump</hasFamilyName>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donald</hasFirstName>
         <hasHobby rdf:resource="http://dbpedia.org/page/Golf"/>
-        <hasPet rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Spike"/>
+        <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Spike"/>
         <hasSkill rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence"/>
         <isPresidentOf rdf:resource="http://dbpedia.org/page/United_States"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1946-06-14T12:00:00</hasBirthday>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trump</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donald</hasFirstName>
     </owl:NamedIndividual>
     
 
@@ -1226,6 +1257,34 @@
     
 
 
+    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence -->
+
+    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence"/>
+    
+
+
+    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki -->
+
+    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Lule%C3%A5_University_of_Technology#Luleå_University_of_Technology -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Lule%C3%A5_University_of_Technology#Luleå_University_of_Technology">
+        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Luleå#Luleå -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Luleå#Luleå">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://genealogy.math.ndsu.nodak.edu/id.php?id=159805 -->
 
     <owl:NamedIndividual rdf:about="https://genealogy.math.ndsu.nodak.edu/id.php?id=159805">
@@ -1277,6 +1336,22 @@
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount"/>
         <isGoogleScholarAccountOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">PekkaNeittaanmakiInGoogleScholar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scholar.google.se/citations?user=wba4WxIAAAAJ&amp;hl=en#EvgenyOsipovInGoogleScholar -->
+
+    <owl:NamedIndividual rdf:about="https://scholar.google.se/citations?user=wba4WxIAAAAJ&amp;hl=en#EvgenyOsipovInGoogleScholar">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ltu.se/cms_fs/1.25221!/img/img/eao_web_2.jpg_gen/derivatives/double_card/eao_web_2.jpg#Evgeny_Osipov.JPG -->
+
+    <owl:NamedIndividual rdf:about="https://www.ltu.se/cms_fs/1.25221!/img/img/eao_web_2.jpg_gen/derivatives/double_card/eao_web_2.jpg#Evgeny_Osipov.JPG">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Photo"/>
     </owl:NamedIndividual>
     
 
