@@ -981,6 +981,7 @@
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Alex">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Employee"/>
+        <hasJobRecord rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JR3"/>
         <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shapin</hasFamilyName>
         <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</hasFirstName>
     </owl:NamedIndividual>
