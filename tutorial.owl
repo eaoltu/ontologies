@@ -1073,7 +1073,6 @@
         <hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=4U8ydfgAAAAJ"/>
         <hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=159805"/>
         <hasORCIDAccount rdf:resource="https://orcid.org/0000-0001-7732-2962"/>
-        <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Tom"/>
         <hasPhoto rdf:resource="http://www.cs.jyu.fi/ai/Vagan_Terziyan.JPG"/>
         <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-12-27T00:00:00</hasBirthday>
         <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terziyan</hasFamilyName>
