@@ -977,6 +977,16 @@
     
 
 
+    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Alex">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Employee"/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shapin</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</hasFirstName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://d0034e.ddns.net/ontologies/Cars.owl#CarOfMichael -->
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#CarOfMichael">
@@ -1031,6 +1041,16 @@
     
 
 
+    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Duty3 -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Duty3">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Duty"/>
+        <isDutyFrom rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JR3"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Researcher</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Engine1 -->
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Engine1">
@@ -1046,6 +1066,16 @@
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Engine"/>
         <hasPhoto rdf:resource="http://wallpaperswide.com/download/ferrari_engine-wallpaper-1280x720.jpg"/>
         <isPartOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#CarOfMichael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#Ericsson -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Ericsson">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#WikipediaPage"/>
+        <isWebPageOf rdf:resource="http://dbpedia.org/page/Ericsson"/>
+        <hasURI>http://en.wikipedia.org/wiki/Ericsson</hasURI>
     </owl:NamedIndividual>
     
 
@@ -1083,6 +1113,16 @@
         <hasReferenceToEmployer rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#SixthGearStudio"/>
         <hasValidityInterval rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#TI3"/>
         <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Duc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/Cars.owl#JR3 -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#JR3">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#JobRecord"/>
+        <hasReferenceToDuty rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Duty3"/>
+        <hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Ericsson"/>
     </owl:NamedIndividual>
     
 
@@ -1266,6 +1306,16 @@
         <hasWebPage rdf:resource="http://en.wikipedia.org/wiki/Berlin"/>
         <isCityofBirthFor rdf:resource="http://dbpedia.org/page/Michael_Schumacher"/>
         <isCityofBirthFor rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2016/SWRL_Example.owl#MichaelFaraday"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Ericsson -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Ericsson">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Employer"/>
+        <hasWebPage rdf:resource="http://dbpedia.org/page/Ericsson"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></hasDescription>
     </owl:NamedIndividual>
     
 
