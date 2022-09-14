@@ -51,475 +51,475 @@
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasAccount -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasAccount">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasAccount">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Account"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCapital -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasCapital -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCapital">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCity"/>
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCapitalOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCapital">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCity"/>
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCapitalOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCity -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasCity -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCity">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCity">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCityOfBirth -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasCityOfBirth -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCityOfBirth">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOfBirthFor"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCityOfBirth">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOfBirthFor"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCityOfResidence -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasCityOfResidence -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCityOfResidence">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasResident"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCityOfResidence">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasResident"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCompany -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasCompany -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCompany">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCompanyIn"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Company"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCompany">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCompanyIn"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Company"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCountryOfResidence -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasCountryOfResidence -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCountryOfResidence">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCountryOfResidenceFor"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCountryOfResidence">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCountryOfResidenceFor"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGoogleScholarAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasGoogleScholarAccount -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGoogleScholarAccount">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasAccount"/>
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isGoogleScholarAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasGoogleScholarAccount">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasAccount"/>
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isGoogleScholarAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#GoogleScholarAccount"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGraduate -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasGraduate -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGraduate">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGraduatedFrom"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasGraduate">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasGraduatedFrom"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGraduatedFrom -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasGraduatedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasGraduatedFrom">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasGraduatedFrom">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasHobby -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasHobby -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasHobby">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isHobbyOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Hobby"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasHobby">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isHobbyOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Hobby"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasIntededDegree -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasIntededDegree -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasIntededDegree">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isIntededDegreeIn"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasIntededDegree">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isIntededDegreeIn"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Degree"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasJobRecord -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasJobRecord -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasJobRecord">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasRecord"/>
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isJobRecordOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasJobRecord">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasRecord"/>
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isJobRecordOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasMathGenealogyAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasMathGenealogyAccount -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasMathGenealogyAccount">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasAccount"/>
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isMathGenealogyAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasMathGenealogyAccount">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasAccount"/>
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isMathGenealogyAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#MathGenealogyAccount"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#MathGenealogyAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasORCIDAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasORCIDAccount -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasORCIDAccount">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasAccount"/>
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isORCIDAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasORCIDAccount">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasAccount"/>
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isORCIDAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ORCIDAccount"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#ORCIDAccount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPet -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasPet -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPet">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPetOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasPet">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isPetOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPhoto -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasPhoto -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPhoto">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPhotoOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasPhoto">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isPhotoOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Photo"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Photo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPresident -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasPresident -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPresident">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPresidentOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasPresident">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isPresidentOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Politician"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Politician"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasRecord -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasRecord -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasRecord">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isRecordOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasRecord">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isRecordOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasResident -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasResident -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasResident">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasResident">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasSchool -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasSchool -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasSchool">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isSchoolIn"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasSchool">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isSchoolIn"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasSkill -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasSkill -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasSkill">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isSkillOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Skill"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasSkill">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isSkillOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Skill"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasStudyRecord -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasStudyRecord -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasStudyRecord">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasRecord"/>
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isStudyRecordOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasStudyRecord">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasRecord"/>
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isStudyRecordOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasWikipediaPage -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasWikipediaPage -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasWikipediaPage">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isWikipediaPageOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasWikipediaPage">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isWikipediaPageOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isAccountOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isAccountOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isAccountOf">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isAccountOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Account"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCapitalOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isCapitalOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCapitalOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isCapitalOf">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOf">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOfBirthFor -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOfBirthFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOfBirthFor">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOfBirthFor">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCompanyIn -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isCompanyIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCompanyIn">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Company"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isCompanyIn">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Company"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCountryOfResidenceFor -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isCountryOfResidenceFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCountryOfResidenceFor">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isCountryOfResidenceFor">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isGoogleScholarAccountOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isGoogleScholarAccountOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isGoogleScholarAccountOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isGoogleScholarAccountOf">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#GoogleScholarAccount"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isHobbyOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isHobbyOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isHobbyOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isHobbyOf"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isIntededDegreeIn -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isIntededDegreeIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isIntededDegreeIn">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isIntededDegreeIn">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Degree"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isJobRecordOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isJobRecordOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isJobRecordOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isRecordOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isJobRecordOf">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isRecordOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isMathGenealogyAccountOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isMathGenealogyAccountOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isMathGenealogyAccountOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isMathGenealogyAccountOf">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#MathGenealogyAccount"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#MathGenealogyAccount"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isORCIDAccountOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isORCIDAccountOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isORCIDAccountOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isAccountOf"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isORCIDAccountOf">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isAccountOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ORCIDAccount"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#ORCIDAccount"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isOlderThan -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isOlderThan -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isOlderThan">
-        <owl:inverseOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isYongerThan"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isOlderThan">
+        <owl:inverseOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isYongerThan"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPetOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isPetOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPetOf">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isPetOf">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPhotoOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isPhotoOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPhotoOf">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Photo"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isPhotoOf">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Photo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPresidentOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isPresidentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isPresidentOf">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isPresidentOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Politician"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Politician"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isRecordOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isRecordOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isRecordOf">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isRecordOf">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isSchoolIn -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isSchoolIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isSchoolIn">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isSchoolIn">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isSkillOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isSkillOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isSkillOf">
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Skill"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isSkillOf">
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Skill"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isStudyRecordOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isStudyRecordOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isStudyRecordOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isRecordOf"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isStudyRecordOf">
+        <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isRecordOf"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isWikipediaPageOf -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isWikipediaPageOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isWikipediaPageOf">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isWikipediaPageOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isYongerThan -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#isYongerThan -->
 
-    <owl:ObjectProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isYongerThan">
+    <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#isYongerThan">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:ObjectProperty>
     
 
@@ -535,51 +535,51 @@
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasBirthday -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasBirthday -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasBirthday">
+    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasBirthday">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasFamilyName -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasFamilyName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasFamilyName">
+    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasFamilyName">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasFinishingTime -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasFinishingTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasFinishingTime">
+    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasFinishingTime">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasFirstName -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasFirstName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasFirstName">
+    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasFirstName">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasStartTime -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#hasStartTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasStartTime">
+    <owl:DatatypeProperty rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#hasStartTime">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
+        <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -596,122 +596,106 @@
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#Person -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Account -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#Person">
-        <owl:equivalentClass rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Account"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#University -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#AmericanResident -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#University">
-        <owl:equivalentClass rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#University"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account -->
-
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account"/>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#AmericanResident -->
-
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#AmericanResident">
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#AmericanResident">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+                    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCountryOfResidence"/>
+                        <owl:onProperty rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCountryOfResidence"/>
                         <owl:hasValue rdf:resource="http://dbpedia.org/page/United_States"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#BravePerson -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#BravePerson -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#BravePerson">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#BravePerson">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Cat -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Cat -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Cat">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Cat">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#City -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Company -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Company -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Company"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Company"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#CompanyDepartment -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#CompanyDepartment -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#CompanyDepartment">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Department"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#CompanyDepartment">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Department"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Country -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Degree -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Degree"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Department -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Department -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Department"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Department"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Dog -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Dog -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Dog">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Dog">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ExoticAnimal -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#ExoticAnimal -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ExoticAnimal">
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#ExoticAnimal">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+                    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Cat"/>
-                                    <rdf:Description rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Dog"/>
+                                    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Cat"/>
+                                    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Dog"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:complementOf>
@@ -719,209 +703,223 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Faculty -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Faculty -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Faculty"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Faculty"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#FinnishResident -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#FinnishResident -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#FinnishResident">
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#FinnishResident">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+                    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCountryOfResidence"/>
+                        <owl:onProperty rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCountryOfResidence"/>
                         <owl:hasValue rdf:resource="http://dbpedia.org/page/Finland"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#GoogleScholarAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#GoogleScholarAccount">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Account"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Hobby -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Hobby -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Hobby">
-        <owl:disjointWith rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <owl:disjointWith rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Hobby">
+        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Job -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Job -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Job"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Job"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#KindPerson -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#KindPerson -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#KindPerson">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#KindPerson">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#MathGenealogyAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#MathGenealogyAccount -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#MathGenealogyAccount">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#MathGenealogyAccount">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Account"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#NonTraditionalHomeAnimal -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#NonTraditionalHomeAnimal -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#NonTraditionalHomeAnimal">
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#NonTraditionalHomeAnimal">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+                    <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Cat"/>
+                        <owl:complementOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Cat"/>
                     </owl:Class>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Dog"/>
+                        <owl:complementOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Dog"/>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#HomeAnimal"/>
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#HomeAnimal"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ORCIDAccount -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#ORCIDAccount -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ORCIDAccount">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Account"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#ORCIDAccount">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Account"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Person -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person">
-        <owl:disjointWith rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Skill"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Person">
+        <owl:equivalentClass rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#Person"/>
+        <owl:disjointWith rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Skill"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Photo -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Photo -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Photo"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Photo"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Politician -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Politician -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Politician">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Politician">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Record -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#School -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#SchoolDepartment -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#SchoolDepartment -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#SchoolDepartment">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Department"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#SchoolDepartment">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Department"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#SecondarySchool -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#SecondarySchool -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#SecondarySchool">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#SecondarySchool">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Skill -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Skill -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Skill"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Skill"/>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Student -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Student -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Student">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Record"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Record"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Teacher -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Teacher">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher">
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#University -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#University -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#University">
-        <rdfs:subClassOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#School"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#University">
+        <owl:equivalentClass rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#University"/>
+        <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#School"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage -->
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage -->
 
-    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage"/>
+    <owl:Class rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage"/>
+    
+
+
+    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#Person -->
+
+    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#Person"/>
+    
+
+
+    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#University -->
+
+    <owl:Class rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#University"/>
     
 
 
@@ -936,19 +934,136 @@
     
 
 
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Bachelor -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Bachelor">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Confidence -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Confidence">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Jerry -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Jerry">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#ExoticAnimal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Master -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Master">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Pekka_Neittaanmaki -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Pekka_Neittaanmaki">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1951-04-14T12:00:00</hasBirthday>
+        <hasCityOfResidence rdf:resource="http://dbpedia.org/page/Jyväskylä"/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neittaanmaki</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pekka</hasFirstName>
+        <hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=BShrE6oAAAAJ&amp;hl=en&amp;oi=sra"/>
+        <hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=58777"/>
+        <hasORCIDAccount rdf:resource="https://orcid.org/0000-0003-4737-7094"/>
+        <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Jerry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#PhD -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#PhD">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Spike -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Spike">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Dog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Tom -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Tom">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Cat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#VaganMaster -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#VaganMaster">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#StudyRecord"/>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1981-07-01T12:00:00</hasFinishingTime>
+        <hasIntededDegree rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Master"/>
+        <hasSchool rdf:resource="http://dbpedia.org/page/Kharkiv_National_University_of_Radioelectronics"/>
+        <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-09-01T09:00:00</hasStartTime>
+        <isStudyRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#VaganNokia -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#VaganNokia">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#JobRecord"/>
+        <hasCompany rdf:resource="http://dbpedia.org/page/Nokia"/>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-06-09T12:00:00</hasFinishingTime>
+        <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-07-01T12:00:00</hasStartTime>
+        <isJobRecordOf rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan -->
+
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/tutorial.owl#Vagan_Terziyan">
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher"/>
+        <owl:sameAs rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#VaganTerziyan"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-12-27T00:00:00</hasBirthday>
+        <hasCityOfResidence rdf:resource="http://dbpedia.org/page/Jyväskylä"/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terziyan</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vagan</hasFirstName>
+        <hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=4U8ydfgAAAAJ"/>
+        <hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=159805"/>
+        <hasORCIDAccount rdf:resource="https://orcid.org/0000-0001-7732-2962"/>
+        <hasPet rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Tom"/>
+        <hasPhoto rdf:resource="http://www.cs.jyu.fi/ai/Vagan_Terziyan.JPG"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://dbpedia.org/page/Donald_Trump -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Donald_Trump">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Politician"/>
-        <tutorial:hasCityOfResidence rdf:resource="http://dbpedia.org/page/Washington,_D.C."/>
-        <tutorial:hasHobby rdf:resource="http://dbpedia.org/page/Golf"/>
-        <tutorial:hasPet rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Spike"/>
-        <tutorial:hasSkill rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence"/>
-        <tutorial:isPresidentOf rdf:resource="http://dbpedia.org/page/United_States"/>
-        <tutorial:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1946-06-14T12:00:00</tutorial:hasBirthday>
-        <tutorial:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trump</tutorial:hasFamilyName>
-        <tutorial:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donald</tutorial:hasFirstName>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Politician"/>
+        <hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1946-06-14T12:00:00</hasBirthday>
+        <hasCityOfResidence rdf:resource="http://dbpedia.org/page/Washington,_D.C."/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trump</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donald</hasFirstName>
+        <hasHobby rdf:resource="http://dbpedia.org/page/Golf"/>
+        <hasPet rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Spike"/>
+        <hasSkill rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence"/>
+        <isPresidentOf rdf:resource="http://dbpedia.org/page/United_States"/>
     </owl:NamedIndividual>
     
 
@@ -956,9 +1071,9 @@
     <!-- http://dbpedia.org/page/Finland -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Finland">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
-        <tutorial:hasCapital rdf:resource="http://dbpedia.org/page/Helsinki"/>
-        <tutorial:hasWikipediaPage rdf:resource="http://en.wikipedia.org/wiki/Finland"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
+        <hasCapital rdf:resource="http://dbpedia.org/page/Helsinki"/>
+        <hasWikipediaPage rdf:resource="http://en.wikipedia.org/wiki/Finland"/>
     </owl:NamedIndividual>
     
 
@@ -966,7 +1081,7 @@
     <!-- http://dbpedia.org/page/Golf -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Golf">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Hobby"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Hobby"/>
     </owl:NamedIndividual>
     
 
@@ -974,7 +1089,7 @@
     <!-- http://dbpedia.org/page/Helsinki -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Helsinki">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
     </owl:NamedIndividual>
     
 
@@ -982,8 +1097,8 @@
     <!-- http://dbpedia.org/page/Jyväskylä -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Jyväskylä">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <tutorial:isCityOf rdf:resource="http://dbpedia.org/page/Finland"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <isCityOf rdf:resource="http://dbpedia.org/page/Finland"/>
     </owl:NamedIndividual>
     
 
@@ -991,7 +1106,7 @@
     <!-- http://dbpedia.org/page/Kharkiv_National_University_of_Radioelectronics -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Kharkiv_National_University_of_Radioelectronics">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#University"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#University"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">NURE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1000,8 +1115,8 @@
     <!-- http://dbpedia.org/page/New_York_City -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/New_York_City">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <tutorial:isCityOfBirthFor rdf:resource="http://dbpedia.org/page/Donald_Trump"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <isCityOfBirthFor rdf:resource="http://dbpedia.org/page/Donald_Trump"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">NewYork</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1010,7 +1125,7 @@
     <!-- http://dbpedia.org/page/Nokia -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Nokia">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Company"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Company"/>
     </owl:NamedIndividual>
     
 
@@ -1018,9 +1133,9 @@
     <!-- http://dbpedia.org/page/United_States -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/United_States">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Country"/>
-        <tutorial:hasCity rdf:resource="http://dbpedia.org/page/New_York_City"/>
-        <tutorial:hasCity rdf:resource="http://dbpedia.org/page/Washington,_D.C."/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Country"/>
+        <hasCity rdf:resource="http://dbpedia.org/page/New_York_City"/>
+        <hasCity rdf:resource="http://dbpedia.org/page/Washington,_D.C."/>
     </owl:NamedIndividual>
     
 
@@ -1028,9 +1143,9 @@
     <!-- http://dbpedia.org/page/University_of_Jyväskylä -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/University_of_Jyväskylä">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#University"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#University"/>
         <owl:sameAs rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#UniversityOfJyvaskyla"/>
-        <tutorial:hasGraduate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki"/>
+        <hasGraduate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki"/>
     </owl:NamedIndividual>
     
 
@@ -1038,9 +1153,9 @@
     <!-- http://dbpedia.org/page/Wharton_School_of_the_University_of_Pennsylvania -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Wharton_School_of_the_University_of_Pennsylvania">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#University"/>
-        <tutorial:hasGraduate rdf:resource="http://dbpedia.org/page/Donald_Trump"/>
-        <tutorial:hasWikipediaPage rdf:resource="http://en.wikipedia.org/wiki/Wharton_School_of_the_University_of_Pennsylvania"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#University"/>
+        <hasGraduate rdf:resource="http://dbpedia.org/page/Donald_Trump"/>
+        <hasWikipediaPage rdf:resource="http://en.wikipedia.org/wiki/Wharton_School_of_the_University_of_Pennsylvania"/>
     </owl:NamedIndividual>
     
 
@@ -1048,8 +1163,8 @@
     <!-- http://dbpedia.org/page/Washington,_D.C. -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Washington,_D.C.">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#City"/>
-        <tutorial:isCapitalOf rdf:resource="http://dbpedia.org/page/United_States"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#City"/>
+        <isCapitalOf rdf:resource="http://dbpedia.org/page/United_States"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Washington</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1058,7 +1173,7 @@
     <!-- http://en.wikipedia.org/wiki/Finland -->
 
     <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/Finland">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">FinlandInWikipedia</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1067,8 +1182,8 @@
     <!-- http://en.wikipedia.org/wiki/United_States -->
 
     <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/United_States">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage"/>
-        <tutorial:isWikipediaPageOf rdf:resource="http://dbpedia.org/page/United_States"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage"/>
+        <isWikipediaPageOf rdf:resource="http://dbpedia.org/page/United_States"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">UnitedStatesInWikipedia</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1077,7 +1192,7 @@
     <!-- http://en.wikipedia.org/wiki/Wharton_School_of_the_University_of_Pennsylvania -->
 
     <owl:NamedIndividual rdf:about="http://en.wikipedia.org/wiki/Wharton_School_of_the_University_of_Pennsylvania">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#WikipediaPage"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#WikipediaPage"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">WSUP_in_Wikipedia</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1086,7 +1201,7 @@
     <!-- http://www.cs.jyu.fi/ai/Vagan_Terziyan.JPG -->
 
     <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/Vagan_Terziyan.JPG">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Photo"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Photo"/>
     </owl:NamedIndividual>
     
 
@@ -1094,7 +1209,7 @@
     <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#MichaelCochez -->
 
     <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#MichaelCochez">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Teacher"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Teacher"/>
     </owl:NamedIndividual>
     
 
@@ -1107,132 +1222,14 @@
 
     <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#VaganTerziyan -->
 
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#VaganTerziyan">
-        <owl:sameAs rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Vagan_Terziyan"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Bachelor -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Bachelor">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Confidence">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Skill"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Jerry -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Jerry">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ExoticAnimal"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Master -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Master">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Teacher"/>
-        <tutorial:hasCityOfResidence rdf:resource="http://dbpedia.org/page/Jyväskylä"/>
-        <tutorial:hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=BShrE6oAAAAJ&amp;hl=en&amp;oi=sra"/>
-        <tutorial:hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=58777"/>
-        <tutorial:hasORCIDAccount rdf:resource="https://orcid.org/0000-0003-4737-7094"/>
-        <tutorial:hasPet rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Jerry"/>
-        <tutorial:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1951-04-14T12:00:00</tutorial:hasBirthday>
-        <tutorial:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neittaanmaki</tutorial:hasFamilyName>
-        <tutorial:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pekka</tutorial:hasFirstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#PhD -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#PhD">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Degree"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Spike -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Spike">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Dog"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Tom -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Tom">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Cat"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#VaganMaster -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#VaganMaster">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#StudyRecord"/>
-        <tutorial:hasIntededDegree rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Master"/>
-        <tutorial:hasSchool rdf:resource="http://dbpedia.org/page/Kharkiv_National_University_of_Radioelectronics"/>
-        <tutorial:isStudyRecordOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Vagan_Terziyan"/>
-        <tutorial:hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1981-07-01T12:00:00</tutorial:hasFinishingTime>
-        <tutorial:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-09-01T09:00:00</tutorial:hasStartTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#VaganNokia -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#VaganNokia">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#JobRecord"/>
-        <tutorial:hasCompany rdf:resource="http://dbpedia.org/page/Nokia"/>
-        <tutorial:isJobRecordOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Vagan_Terziyan"/>
-        <tutorial:hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-06-09T12:00:00</tutorial:hasFinishingTime>
-        <tutorial:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-07-01T12:00:00</tutorial:hasStartTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Vagan_Terziyan -->
-
-    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Vagan_Terziyan">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Teacher"/>
-        <tutorial:hasCityOfResidence rdf:resource="http://dbpedia.org/page/Jyväskylä"/>
-        <tutorial:hasGoogleScholarAccount rdf:resource="https://scholar.google.com/citations?user=4U8ydfgAAAAJ"/>
-        <tutorial:hasMathGenealogyAccount rdf:resource="https://genealogy.math.ndsu.nodak.edu/id.php?id=159805"/>
-        <tutorial:hasORCIDAccount rdf:resource="https://orcid.org/0000-0001-7732-2962"/>
-        <tutorial:hasPet rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Tom"/>
-        <tutorial:hasPhoto rdf:resource="http://www.cs.jyu.fi/ai/Vagan_Terziyan.JPG"/>
-        <tutorial:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-12-27T00:00:00</tutorial:hasBirthday>
-        <tutorial:hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terziyan</tutorial:hasFamilyName>
-        <tutorial:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vagan</tutorial:hasFirstName>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/dissertation.owl#VaganTerziyan"/>
     
 
 
     <!-- https://genealogy.math.ndsu.nodak.edu/id.php?id=159805 -->
 
     <owl:NamedIndividual rdf:about="https://genealogy.math.ndsu.nodak.edu/id.php?id=159805">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#MathGenealogyAccount"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#MathGenealogyAccount"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mathematical Genealogy Account of Vagan Terziyan</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1241,7 +1238,7 @@
     <!-- https://genealogy.math.ndsu.nodak.edu/id.php?id=58777 -->
 
     <owl:NamedIndividual rdf:about="https://genealogy.math.ndsu.nodak.edu/id.php?id=58777">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#MathGenealogyAccount"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#MathGenealogyAccount"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mathematical Genealogy Account of Pekka Neittaanmaki</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1250,7 +1247,7 @@
     <!-- https://orcid.org/0000-0001-7732-2962 -->
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-7732-2962">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ORCIDAccount"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#ORCIDAccount"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">VaganTerziyanInORCID</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1259,7 +1256,7 @@
     <!-- https://orcid.org/0000-0003-4737-7094 -->
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0003-4737-7094">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ORCIDAccount"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#ORCIDAccount"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">PekkaNeittaanmakiInORCHID</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1268,7 +1265,7 @@
     <!-- https://scholar.google.com/citations?user=4U8ydfgAAAAJ -->
 
     <owl:NamedIndividual rdf:about="https://scholar.google.com/citations?user=4U8ydfgAAAAJ">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#GoogleScholarAccount"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">VaganTerziyanInGoogleScholar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1277,8 +1274,8 @@
     <!-- https://scholar.google.com/citations?user=BShrE6oAAAAJ&amp;hl=en&amp;oi=sra -->
 
     <owl:NamedIndividual rdf:about="https://scholar.google.com/citations?user=BShrE6oAAAAJ&amp;hl=en&amp;oi=sra">
-        <rdf:type rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#GoogleScholarAccount"/>
-        <tutorial:isGoogleScholarAccountOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki"/>
+        <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#GoogleScholarAccount"/>
+        <isGoogleScholarAccountOf rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Pekka_Neittaanmaki"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">PekkaNeittaanmakiInGoogleScholar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1314,9 +1311,10 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasPet"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1324,10 +1322,9 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPet"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
                                 <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
-                                <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1336,7 +1333,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Cat"/>
+                                        <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Cat"/>
                                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1353,7 +1350,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#KindPerson"/>
+                        <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#KindPerson"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1371,9 +1368,10 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasPet"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1381,10 +1379,9 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasPet"/>
-                                <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
-                                <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#ExoticAnimal"/>
+                                <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1393,8 +1390,8 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#ExoticAnimal"/>
-                                        <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
+                                        <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+                                        <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1410,7 +1407,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#BravePerson"/>
+                        <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#BravePerson"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1429,8 +1426,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
+                        <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1439,8 +1436,8 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
-                                <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
+                                <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+                                <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1449,7 +1446,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasBirthday"/>
+                                        <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasBirthday"/>
                                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                                         <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#z"/>
                                     </rdf:Description>
@@ -1460,7 +1457,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasBirthday"/>
+                                                <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasBirthday"/>
                                                 <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                                                 <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#k"/>
                                             </rdf:Description>
@@ -1495,7 +1492,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isYongerThan"/>
+                        <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isYongerThan"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                         <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                     </rdf:Description>
@@ -1514,9 +1511,10 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#Person"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCityOfResidence"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1525,9 +1523,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCityOfResidence"/>
-                                <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
-                                <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
+                                <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#isCityOf"/>
+                                <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
+                                <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#z"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1535,10 +1533,9 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#isCityOf"/>
-                                        <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#y"/>
-                                        <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#z"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#Person"/>
+                                        <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1554,7 +1551,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#hasCountryOfResidence"/>
+                        <swrl:propertyPredicate rdf:resource="http://d0034e.ddns.net/ontologies/tutorial.owl#hasCountryOfResidence"/>
                         <swrl:argument1 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#x"/>
                         <swrl:argument2 rdf:resource="http://www.cs.jyu.fi/ai/vagan/ontologies/2019/tutorial.owl#z"/>
                     </rdf:Description>
