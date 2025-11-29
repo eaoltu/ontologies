@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX onto: <http://d0034e.ddns.net/ontologies/Cars.owl#>
+PREFIX db: <http://dbpedia.org/page/> 
+SELECT DISTINCT ?name ?familyname  ?begins  ?ends
+WHERE {
+  ?x rdf:type onto:Employee .
+  ?x onto:hasFirstName ?name .
+  ?x onto:hasFamilyName ?familyname .
+  ?x onto:hasJobRecord ?record .
+  ?record onto:hasReferenceToEmployer db:Ericsson .
+  ?record onto:hasValidityInterval ?interval .
+  ?interval onto:hasStartingTime ?begins .
+  ?interval onto:hasFinishingTime ?ends .
+}
+ORDER BY ?name

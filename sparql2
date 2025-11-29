@@ -1,0 +1,11 @@
+PREFIX tutorial: <http://d0034e.ddns.net/ontologies/tutorial.owl#>
+SELECT DISTINCT ?firstname ?familyname ?birthday ?country ?city ?capital
+WHERE { 
+?someone tutorial:hasPet tutorial:Tom 
+?someone tutorial:hasFirstName ?firstname .
+?someone tutorial:hasFamilyName ?familyname .
+?someone tutorial:hasBirthday ?birthday .
+?someone tutorial:hasCityOfResidence ?city .
+?city tutorial:isCityOf ?country .
+?country tutorial:hasCapital ?capital 
+}

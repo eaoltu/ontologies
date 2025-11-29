@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://d0034e.ddns.net/ontologies/Cars.owl#"
+     xml:base="http://d0034e.ddns.net/ontologies/Cars.owl"
+     xmlns:cars="http://d0034e.ddns.net/ontologies/Cars.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl">
+    </owl:Ontology>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="cars:Employee">
+        <rdfs:subClassOf rdf:resource="cars:Person"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="cars:Person"/>
+
+    <owl:Class rdf:about="cars:JobRecord">
+        <rdfs:subClassOf rdf:resource="cars:Record"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="cars:Record"/>
+
+    <owl:Class rdf:about="cars:Duty"/>
+
+    <owl:Class rdf:about="cars:TimeInterval"/>
+
+    <owl:Class rdf:about="cars:Employer"/>
+
+    <!-- Properties -->
+    <owl:DatatypeProperty rdf:about="cars:hasFamilyName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="cars:Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="cars:hasFirstName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="cars:Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="cars:hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="cars:hasFinishingTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="cars:TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="cars:hasStartingTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="cars:TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+
+    <owl:ObjectProperty rdf:about="cars:hasJobRecord">
+        <owl:inverseOf rdf:resource="cars:isJobRecordOf"/>
+        <rdfs:domain rdf:resource="cars:Employee"/>
+        <rdfs:range rdf:resource="cars:JobRecord"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:hasReferenceToDuty">
+        <owl:inverseOf rdf:resource="cars:isDutyFrom"/>
+        <rdfs:domain rdf:resource="cars:JobRecord"/>
+        <rdfs:range rdf:resource="cars:Duty"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:hasReferenceToEmployer">
+        <owl:inverseOf rdf:resource="cars:isReferedAsEmployerIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="cars:JobRecord"/>
+        <rdfs:range rdf:resource="cars:Employer"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:hasValidityInterval">
+        <owl:inverseOf rdf:resource="cars:isValidityIntervalFor"/>
+        <rdfs:domain rdf:resource="cars:Record"/>
+        <rdfs:range rdf:resource="cars:TimeInterval"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:isJobRecordOf">
+        <rdfs:domain rdf:resource="cars:JobRecord"/>
+        <rdfs:range rdf:resource="cars:Employee"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:isDutyFrom">
+        <rdfs:domain rdf:resource="cars:Duty"/>
+        <rdfs:range rdf:resource="cars:JobRecord"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:isReferedAsEmployerIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="cars:Employer"/>
+        <rdfs:range rdf:resource="cars:JobRecord"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="cars:isValidityIntervalFor">
+        <rdfs:domain rdf:resource="cars:TimeInterval"/>
+        <rdfs:range rdf:resource="cars:Record"/>
+    </owl:ObjectProperty>
+
+    <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="cars:Alex">
+        <rdf:type rdf:resource="cars:Employee"/>
+        <hasJobRecord rdf:resource="cars:JR3"/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shapin</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</hasFirstName>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="cars:JR3">
+        <rdf:type rdf:resource="cars:JobRecord"/>
+        <hasReferenceToDuty rdf:resource="cars:Duty3"/>
+        <hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Ericsson"/>
+        <hasValidityInterval rdf:resource="cars:TI4"/>
+        <isJobRecordOf rdf:resource="cars:Alex"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="cars:Duty3">
+        <rdf:type rdf:resource="cars:Duty"/>
+        <isDutyFrom rdf:resource="cars:JR3"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Researcher</hasDescription>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="cars:TI4">
+        <rdf:type rdf:resource="cars:TimeInterval"/>
+        <isValidityIntervalFor rdf:resource="cars:JR3"/>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></hasFinishingTime>
+        <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</hasStartingTime>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Ericsson">
+        <rdf:type rdf:resource="cars:Employer"/>
+        <isReferedAsEmployerIn rdf:resource="cars:JR3"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></hasDescription>
+    </owl:NamedIndividual>
+</rdf:RDF>
