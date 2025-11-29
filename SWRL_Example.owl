@@ -14,11 +14,11 @@
     </owl:Class>
 
     <!-- Individuals -->
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/SWRL_Example.owl#Alexander_von_Humboldt">
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#Alexander_von_Humboldt">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/SWRL_Example.owl#Researcher"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/SWRL_Example.owl#MichaelFaraday">
+    <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/Cars.owl#MichaelFaraday">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/SWRL_Example.owl#Researcher"/>
     </owl:NamedIndividual>
 </rdf:RDF>
