@@ -1457,7 +1457,7 @@
 
     <owl:NamedIndividual rdf:about="http://d0034e.ddns.net/ontologies/SWRL_Example.owl#MichaelFaraday">
         <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/Cars.owl#Person"/>
-        <hasCityofBirth rdf:resource="http://dbpedia.org/page/Berlin"/>
+        <hasCityofBirth rdf:resource="http://dbpedia.org/page/London"/>
         <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faraday</hasFamilyName>
         <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael</hasFirstName>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:seeAlso>
