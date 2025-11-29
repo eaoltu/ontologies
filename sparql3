@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX onto: <http://d0034e.ddns.net/ontologies/Cars.owl#>
+PREFIX onto2: <http://d0034e.ddns.net/ontologies/SWRL_Example.owl#>
+PREFIX db: <http://dbpedia.org/page/> 
+
+SELECT DISTINCT ?name ?familyname  
+
+FROM <http://d0034e.ddns.net/ontologies/Cars.owl>
+FROM <http://d0034e.ddns.net/ontologies/SWRL_Example.owl>
+
+WHERE {
+  ?x rdf:type onto:Person .
+  ?x onto:hasCityofBirth db:Berlin .
+  ?x onto:hasFirstName ?name .  
+  ?x onto:hasFamilyName ?familyname .
+  ?x rdf:type onto2:Researcher .
+  }
+
+ORDER BY ?name
