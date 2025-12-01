@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:ns0="http://d0034e.ddns.net/ontologies/example.owl#">
+
+  <rdfs:Class rdf:about="http://d0034e.ddns.net/ontologies/example.owl#Person">
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://d0034e.ddns.net/ontologies/example.owl#Woman">
+    <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Person"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://d0034e.ddns.net/ontologies/example.owl#Man">
+    <rdfs:subClassOf rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Person"/>
+  </rdfs:Class>
+
+  <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/example.owl#hasSpouse">
+    <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Person"/>
+    <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://d0034e.ddns.net/ontologies/example.owl#hasHusband">
+    <rdfs:subPropertyOf rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#hasSpouse"/>
+    <rdfs:domain rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Woman"/>
+    <rdfs:range rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Man"/>
+  </owl:ObjectProperty>
+
+  <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/example.owl#John">
+    <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Man"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://d0034e.ddns.net/ontologies/example.owl#Mary">
+    <rdf:type rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#Woman"/>
+    <ns0:hasHusband rdf:resource="http://d0034e.ddns.net/ontologies/example.owl#John"/>
+  </rdf:Description>
+
+</rdf:RDF>
