@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://foo.bar/onto/person.owl#"
+     xml:base="http://foo.bar/onto/person.owl"
+     xmlns:onto_ex="http://foo.bar/onto/person.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://foo.bar/onto/person.owl">
+    </owl:Ontology>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="onto_ex:Employee">
+        <rdfs:subClassOf rdf:resource="onto_ex:Person"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="onto_ex:Person"/>
+
+    <owl:Class rdf:about="onto_ex:JobRecord">
+        <rdfs:subClassOf rdf:resource="onto_ex:Record"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="onto_ex:Record"/>
+
+    <owl:Class rdf:about="onto_ex:Duty"/>
+
+    <owl:Class rdf:about="onto_ex:TimeInterval"/>
+
+    <owl:Class rdf:about="onto_ex:Employer"/>
+
+    <!-- Properties -->
+    <owl:DatatypeProperty rdf:about="onto_ex:hasFamilyName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="onto_ex:Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="onto_ex:hasFirstName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="onto_ex:Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="onto_ex:hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="onto_ex:hasFinishingTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="onto_ex:TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="onto_ex:hasStartingTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="onto_ex:TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:hasJobRecord">
+        <owl:inverseOf rdf:resource="onto_ex:isJobRecordOf"/>
+        <rdfs:domain rdf:resource="onto_ex:Employee"/>
+        <rdfs:range rdf:resource="onto_ex:JobRecord"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:hasReferenceToDuty">
+        <owl:inverseOf rdf:resource="onto_ex:isDutyFrom"/>
+        <rdfs:domain rdf:resource="onto_ex:JobRecord"/>
+        <rdfs:range rdf:resource="onto_ex:Duty"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:hasReferenceToEmployer">
+        <owl:inverseOf rdf:resource="onto_ex:isReferedAsEmployerIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="onto_ex:JobRecord"/>
+        <rdfs:range rdf:resource="onto_ex:Employer"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:hasValidityInterval">
+        <owl:inverseOf rdf:resource="onto_ex:isValidityIntervalFor"/>
+        <rdfs:domain rdf:resource="onto_ex:Record"/>
+        <rdfs:range rdf:resource="onto_ex:TimeInterval"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:isJobRecordOf">
+        <rdfs:domain rdf:resource="onto_ex:JobRecord"/>
+        <rdfs:range rdf:resource="onto_ex:Employee"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:isDutyFrom">
+        <rdfs:domain rdf:resource="onto_ex:Duty"/>
+        <rdfs:range rdf:resource="onto_ex:JobRecord"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:isReferedAsEmployerIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="onto_ex:Employer"/>
+        <rdfs:range rdf:resource="onto_ex:JobRecord"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="onto_ex:isValidityIntervalFor">
+        <rdfs:domain rdf:resource="onto_ex:TimeInterval"/>
+        <rdfs:range rdf:resource="onto_ex:Record"/>
+    </owl:ObjectProperty>
+
+    <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="onto_ex:Alex">
+        <rdf:type rdf:resource="onto_ex:Employee"/>
+        <hasJobRecord rdf:resource="onto_ex:JR3"/>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shapin</hasFamilyName>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</hasFirstName>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="onto_ex:JR3">
+        <rdf:type rdf:resource="onto_ex:JobRecord"/>
+        <hasReferenceToDuty rdf:resource="onto_ex:Duty3"/>
+        <hasReferenceToEmployer rdf:resource="http://dbpedia.org/page/Ericsson"/>
+        <hasValidityInterval rdf:resource="onto_ex:TI4"/>
+        <isJobRecordOf rdf:resource="onto_ex:Alex"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="onto_ex:Duty3">
+        <rdf:type rdf:resource="onto_ex:Duty"/>
+        <isDutyFrom rdf:resource="onto_ex:JR3"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Researcher</hasDescription>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="onto_ex:TI4">
+        <rdf:type rdf:resource="onto_ex:TimeInterval"/>
+        <isValidityIntervalFor rdf:resource="onto_ex:JR3"/>
+        <hasFinishingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></hasFinishingTime>
+        <hasStartingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</hasStartingTime>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Ericsson">
+        <rdf:type rdf:resource="onto_ex:Employer"/>
+        <isReferedAsEmployerIn rdf:resource="onto_ex:JR3"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></hasDescription>
+    </owl:NamedIndividual>
+</rdf:RDF>

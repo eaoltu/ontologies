@@ -4,6 +4,8 @@
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:ns0="http://d0034e.ddns.net/ontologies/example.owl#">
 
+  <owl:Ontology rdf:about="http://d0034e.ddns.net/ontologies/example.owl"/>
+
   <rdfs:Class rdf:about="http://d0034e.ddns.net/ontologies/example.owl#Person">
   </rdfs:Class>
 
